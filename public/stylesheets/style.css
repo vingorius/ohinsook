@@ -1,0 +1,119 @@
+.oh-color {
+    color: #f65005;
+}
+body {
+    color: #FFF;
+    /*text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);*/
+    min-height: 2000px;
+    padding-top: 70px;
+    background-color: #333;
+}
+a, a:focus, a:hover {
+    color: #FFF;
+}
+.navbar {
+    margin-bottom: 20px;
+}
+.navbar-inverse .navbar-brand {
+    color: #f65005;
+}
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+    color: #df5414;
+}
+nav div ul li a {
+    border-bottom: 2px solid transparent;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 0;
+    padding-right: 0;
+}
+.work_image {
+    width: 130px;
+}
+body .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table th, .table td {
+    border-top: none !important;
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #444;
+}
+.table th, .table td {
+    border-top: none !important;
+}
+.work_image {
+    width: 130px;
+}
+.work-detail {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.work-detail-header {
+    color: #787777;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.essay {
+    font-size: 14px;
+    line-height: 1.428;
+    padding: 50px 50px
+}
+.carousel-inner > .item > img {
+    margin: auto;
+}
+.carousel-control {
+    width: 5%;
+    opacity: 0.3;
+}
+.carousel-indicators {
+    bottom: -50px;
+}
+.carousel-control:hover, .carousel-control:focus {
+    color: #fff;
+    text-decoration: none;
+    filter: alpha(opacity=50);
+    outline: 0;
+    opacity: .5;
+}
+.centered {
+    vertical-align: middle;
+    text-align: center;
+}
+.gallery {
+    color: #777;
+}
+
+/*Blog*/
+
+.entry-header {
+    font-size: 18px;
+    border-bottom: 1px dotted #777;
+}
+.entry-meta {
+    font-size: small;
+    color: #918F93;
+}
+.entry-contents {
+    color: #C2C2C2;
+    margin: 1.5em 0px 0px;
+}
+.summaryMore {
+    clear: both;
+    text-align: right;
+}
+.yyyymmdd {
+    color: #CCC;
+}
+.hhmm {
+    color: #8B8B8B;
+}
+.mail {
+    color: #cb5d2b;
+}
+.mail:focus, .mail:hover {
+    color: #db8e6b;
+}

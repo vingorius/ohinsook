@@ -1,0 +1,27 @@
+extends modules/baselayout
+
+block content
+  #main.container.main-margin
+    div.table-responsive.ng-scope
+      table.table
+        tbody
+          tr
+            td
+              blockquote Photo +
+                small 2014.11월호
+            td
+              img.work_image(src='images/news/photoplus/1.jpg', data-toggle='modal', data-target='#photoplusModel')
+          tr
+            td
+              blockquote 남편을 10년 동안 사진으로 담은...
+                small 사진은 권력이다
+            td
+              a(href='http://photohistory.tistory.com/14805', target='_black')
+                img.work_image(src='images/news/DSC_8490-2.jpg')
+          tr
+            td
+              blockquote 문화연가 #6. 순간
+                small 이화여자대학교 방송국 EUBS
+            td
+              div.embed-responsive.embed-responsive-4by3
+                iframe(src='https://www.youtube.com/embed/TxEDvaX5P6Q?rel=0', allowfullscreen='', frameborder='0', height='315', width='560')
