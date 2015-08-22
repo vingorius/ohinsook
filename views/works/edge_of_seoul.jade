@@ -1,0 +1,36 @@
+extends ../modules/baselayout
+
+block content
+    div#main.container.main-margin
+        div.work-detail
+            div.work-detail-header
+                h3.text-center
+                    | Standing again at the edge of Seoul
+                    a.pull-right(href='/work')
+                        span(aria-hidden='true') ×
+            div#carousel-photo.carousel.slide(data-ride='carousel', data-interval='false')
+                // Indicators
+                ol.carousel-indicators
+                    each val in [1,2,3,4]
+                        if val === 1
+                            li.active(data-target='carousel-photo', data-slide-to='#{val}')
+                        else
+                            li(data-target='carousel-photo', data-slide-to='#{val}')
+
+                div.carousel-inner
+                    each val in [1,2,3]
+                        if val === 1
+                            div.item.active: img.img-responsive(src='/images/gallery/edge_of_seoul/#{val}.jpg', alt='#{val}')
+                        else            
+                            div.item: img.img-responsive(src='/images/gallery/edge_of_seoul/#{val}.jpg', alt='#{val}')
+
+                    div.item.essay
+                        p 병목안 벽화 마을길
+                        p 그러니까 이 안양 병목안 벽화 마을길을 발견한 것은 우리 가족이 ‘촌’그러운 삶에 대해 진지하게 고민할 무렵이었다.
+                        p 안양에서 서울로 도시의 경계를 넘나드는 터질듯한 전철.
+                        p 거기에 욕망을 밀어넣고 매일 출퇴근을 하지만, 허한 가슴과 도시에서의 삶은 조금도 나아질 기미가 보이지 않았다. 그래서인지 우리는 촌스럽게 현대적인 고층 아파트를 싫어했고, 백화점의 세련된 진열장보다는 재래시장의 소란한 무질서에서 안정감을 느꼈다.
+                        p 낡고 노후한 마을에 덧칠을 한다고 저 경계를 넘을까마는, 그래도 세월의 더께가 덕지덕지 묻어있는 저 집들에 나의 해묵은 그리움을 더해본다.
+                span.left.carousel-control(data-target='#carousel-photo', data-slide='prev')
+                    span.glyphicon.glyphicon-chevron-left
+                span.right.carousel-control(data-target='#carousel-photo', data-slide='next')
+                    span.glyphicon.glyphicon-chevron-right

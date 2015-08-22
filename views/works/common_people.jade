@@ -1,0 +1,41 @@
+extends ../modules/baselayout
+
+block content
+    div#main.container.main-margin
+        div.work-detail
+            div.work-detail-header
+                h3.text-center
+                    | Common people of Korea
+                    a.pull-right(href='/work')
+                        span(aria-hidden='true') ×
+            div#carousel-photo.carousel.slide(data-ride='carousel', data-interval='false')
+                // Indicators
+                ol.carousel-indicators
+                    each val in [1,2,3,4,5]
+                        if val === 1
+                            li.active(data-target='carousel-photo', data-slide-to='#{val}')
+                        else
+                            li(data-target='carousel-photo', data-slide-to='#{val}')
+
+                div.carousel-inner
+                    each val in [1,2,3,4]
+                        if val === 1
+                            div.item.active: img.img-responsive(src='/images/gallery/common_people/#{val}.jpg', alt='#{val}')
+                        else            
+                            div.item: img.img-responsive(src='/images/gallery/common_people/#{val}.jpg', alt='#{val}')
+
+                    div.item.essay
+                        p 어릴 적에는 나이가 들면 걱정이 없을 줄 알았습니다. 어서 어른이 되고 싶었습니다.
+                        p 하지만, 세월이 흐르수록 세상사는 더욱 정신 없이 돌아치고 온갖 역할과 얽히고 설킨 관계는 복잡해만 갑니다.
+                        p 내가 누구인지 자꾸 잊어버립니다. 무엇을 하고 싶은지 자꾸 잊어보립니다. 무의식으로, 억지로 해내는 일이 점점 많아집니다.
+                        p 사는 것이 항상 서툴고 힘이 듭니다.
+                        p 덫에 걸린 생쥐처럼, 거미줄에 걸린 파리처럼, 광야에서 미친 짐승에게 쫒기다 우물 속 넝쿨에 매달린 나그네처럼....
+                        p 그래도, 세상이 흔들려 보일 때마다 어릴 적 습관처럼, 속안 어디선가 질문 하나 오롯이 솟아납니다.
+                        p 어디로 향하고 있는가? 어리도 향하고 있는가? 그대, 어디로 향하고 있는가?
+                        p 가슴 속을 향하여 묻고 묻다 보면, 묻는 것만으로도 마음이 편안해집니다. 온갖 덫이 사라집니다.
+                        p 그래서 사진을 찍으면서도 나는 묻고 묻습니다. 그러다 보면 머릿속에서 등줄기까지 시원한 물줄기 하나 흐릅니다.
+                        p 가슴이 흐릅니다.
+                span.left.carousel-control(data-target='#carousel-photo', data-slide='prev')
+                    span.glyphicon.glyphicon-chevron-left
+                span.right.carousel-control(data-target='#carousel-photo', data-slide='next')
+                    span.glyphicon.glyphicon-chevron-right

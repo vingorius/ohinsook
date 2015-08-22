@@ -12,4 +12,11 @@ router.get('/:page', function(req, res, next) {
   res.render(page);
 });
 
+router.get('/:folder/:page', function(req, res, next) {
+  var folder = req.params.folder;
+  var page = req.params.page;
+  console.log(folder,page);
+  res.render(folder + '/' + page);
+});
+
 module.exports = router;
