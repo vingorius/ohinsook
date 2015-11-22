@@ -1,0 +1,49 @@
+extends ../modules/baselayout
+
+block content
+	div#main.container.main-margin
+		div.work-detail
+			div.work-detail-header
+				h3.text-center
+					| Imalsan, Boundary between Past and Present
+					a.pull-right(href='/work')
+						span(aria-hidden='true') ×
+			div#carousel-photo.carousel.slide(data-ride='carousel', data-interval='false')
+				// Indicators
+				ol.carousel-indicators
+					each val,idx in [1,2,3,4,5]
+						if val === 1
+							li.active(data-target='#carousel-photo', data-slide-to='#{idx}')
+						else
+							li(data-target='#carousel-photo', data-slide-to='#{idx}')
+
+				div.carousel-inner
+					each val in [1,2,3,4,5]
+						if val === 1
+							div.item.active: img.img-responsive(src='/images/gallery/imalsan/#{val}.jpg', alt='#{val}')
+						else            
+							div.item: img.img-responsive(src='/images/gallery/imalsan/#{val}.jpg', alt='#{val}')
+
+					div.item.essay(style={'margin-left': '80px'})
+						p 이말산을 걸었다.
+						br
+						p 머리가 댕강 잘려져 더 작아진 동자석
+						p 구덩이만 남은 무덤, 주인 잃고 쓰러진 문인석
+						p 온몸에 새겨진 글자마저 어디론가 떠나보낸 비석
+						br
+						p 황량한 겨울산 여기저기
+						p 생김새도, 시절도, 사연도 다 다르지만,
+						p 모두가 스러진 망부석처럼 보이는 것은 왜 일까?
+						br
+						p 누구에게나 한 번 쯤은 있었을 봄날이 그들에게도 있었을까?
+						p 오로지 그림자로만 살아야 가능했던 말못할 세월들.
+						p 한 인간의 삶은 무엇인가?
+						br
+						p 부질없이 코베어진 돌덩이에 꿈이니, 아픔이니, 사랑이니 온갖 감정을 소비하고 있는 사이.
+						p 겨우내 흔적도 없던 나뭇잎과 풀들이 무섭게 솟아나
+						p 봉분과 비석들을 뒤덮고, 계절을 바꿔가고 있다.
+						p 궁금해할 겨를도 없이.
+				span.left.carousel-control(data-target='#carousel-photo', data-slide='prev')
+					span.glyphicon.glyphicon-chevron-left
+				span.right.carousel-control(data-target='#carousel-photo', data-slide='next')
+					span.glyphicon.glyphicon-chevron-right

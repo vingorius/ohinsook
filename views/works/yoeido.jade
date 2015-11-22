@@ -11,11 +11,11 @@ block content
             div#carousel-photo.carousel.slide(data-ride='carousel', data-interval='false')
                 // Indicators
                 ol.carousel-indicators
-                    each val in [1,2,3]
+                    each val,idx in [1,2,3]
                         if val === 1
-                            li.active(data-target='carousel-photo', data-slide-to='#{val}')
+                            li.active(data-target='#carousel-photo', data-slide-to='#{idx}')
                         else
-                            li(data-target='carousel-photo', data-slide-to='#{val}')
+                            li(data-target='#carousel-photo', data-slide-to='#{idx}')
 
                 div.carousel-inner
                     each val in [1,2]
