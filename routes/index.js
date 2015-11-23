@@ -15,7 +15,7 @@ router.get('/:page', function(req, res, next) {
 router.get('/:folder/:page', function(req, res, next) {
     var folder = req.params.folder;
     var page = req.params.page;
-    console.log(folder, page);
+    // console.log(folder, page);
     res.render(folder + '/' + page);
 });
 
