@@ -8,7 +8,6 @@ $(document).ready(function() {
     // ga('create', 'UA-69023226-1', 'auto');
     // ga('send', 'pageview');
     ga('create', 'UA-69023226-1', 'auto', {'allowLinker': true});
-    ga('create', 'UA-69023226-2', 'auto', {'allowLinker': true});
     ga('require', 'linker');
     ga('linker:autoLink', ['oh.citygoat.net', 'www.citygoat.net'] );
     ga('send', 'pageview');
