@@ -1,7 +1,7 @@
 .oh-color {
     color: #f65005;
 }
-html{
+html {
     position: relative;
     min-height: 100%;
 }
@@ -19,6 +19,10 @@ a, a:focus, a:hover {
 }
 .navbar {
     margin-bottom: 20px;
+}
+.navbar-nav {
+    float:right;
+    padding-right: 100px;
 }
 .navbar-inverse .navbar-brand {
     color: #f65005;
@@ -38,12 +42,15 @@ nav div ul li a {
     width: 130px;
 }
 body .container {
-    width: 800px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 .main-margin {
     margin-top: 30px;
+}
+.table-responsive {
+    border: 0px;
 }
 .table th, .table td {
     border-top: none !important;
