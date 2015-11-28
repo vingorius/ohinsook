@@ -1,19 +1,27 @@
 nav.navbar.navbar-inverse.navbar-fixed-top
-  div.container
-    div.navbar-header
-      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-        span.sr-only Oh,Insook
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.navbar-brand(href='/') Oh,Insook
-    div#navbar.navbar-collapse.collapse(style='height: 1px;', aria-expanded='false')
-      ul.nav.navbar-nav
-        li
-          a(href='/') Work
-        li
-          a(href='/cv') CV
-        li
-          a(href='/press') Press
-        li
-          a(href='/news') News
+	div.container
+		div.navbar-header
+			button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+				span.sr-only Oh,Insook
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			a.navbar-brand(href='/') Oh,Insook
+		div#navbar.navbar-collapse.collapse(style='height: 1px;', aria-expanded='false')
+			ul.nav.navbar-nav
+				li
+					a(href='/') Work
+				li
+					a(href='/cv') CV
+				li
+					a(href='/press') Press
+				li
+					a(href='/news') News
+			ul.nav.navbar-nav.navbar-right
+				li
+					a(href='http://www.facebook.com/ohinsookoh',target='fb')
+						i.fa.fa-facebook-official.fa-lg.hvr-grow
+						//- img.hvr-grow(src='/images/others/fb_white.png',style={'width':'20px'})
+				li
+					a(href='mailto:fish892@gmail.com')
+						i.fa.fa-envelope-o.fa-lg.hvr-grow
