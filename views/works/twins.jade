@@ -4,43 +4,43 @@ block variables
 	- var og_url = og_url || "http://oh.citygoat.net/works/twins";
 	- var og_type = og_type || "article";
 	- var og_title = og_title || "My twin daughters";
-	- var og_description = og_description || "My twin daughters, Gallery M, Seoul, KR";
+	- var og_description = og_description || " 도대체 어떤 인연이 있어 쌍둥이로 태어났을까? 엄마 뱃속에서부터 인연이 시작된 것일까? 아니면 그그그, 훨씬 그 전부터 시작된 아주 오래된 인연일까?부모 자식보다도, 부부 사이보다도, 더더더, 훨씬 더 많이 미워하기도 하고, 다투기도 하고, 토라지기도 하고.... 그래도그래도 둘은 아무래도 둘이 아닌 것 같다.나는 두 녀석의 사진을 찍으며 부모와 자식 사이를 고민한다. 그러다보면 사진들 사이로 아이와 아이 사이도 보이고, 나와 내 사이도 보이는 듯 하다.하나의 알에서 꺠어났지만, 너무 다른 둘. 서로의 반쪽으로, 서로를 온전히 지탱해 주기를 바라는 것은 부모의 마음 뿐일까? 아이들이 커다듯, 엄마의 시선도 점점 커가리라 생각한다. 물론 커가는 아이들은 점점 더 미궁 속으로 달아나며, 어른들을 따돌리는 형국이다.";
 	- var og_image = og_image || "http://oh.citygoat.net/images/gallery/twins/1.jpg";
 
 extends ../modules/baselayout
 
 block content
-    div#main.container
-        div.work-detail
-            div.work-detail-header
-                h3.text-center
-                    | My twin daughters
-                    a.pull-right(href='/work')
-                        span(aria-hidden='true') ×
-            div#carousel-photo.carousel.slide(data-ride='carousel', data-interval='false')
-                // Indicators
-                ol.carousel-indicators
-                    each val,idx in [1,2,3,4,5,6,7,8,9,10]
-                        if val === 1
-                            li.active(data-target='#carousel-photo', data-slide-to='#{idx}')
-                        else
-                            li(data-target='#carousel-photo', data-slide-to='#{idx}')
+	div#main.container
+		div.work-detail
+			div.work-detail-header
+				h3.text-center
+					| My twin daughters
+					a.pull-right(href='/work')
+						span(aria-hidden='true') ×
+			div#carousel-photo.carousel.slide(data-ride='carousel', data-interval='false')
+				// Indicators
+				ol.carousel-indicators
+					each val,idx in [1,2,3,4,5,6,7,8,9,10]
+						if val === 1
+							li.active(data-target='#carousel-photo', data-slide-to='#{idx}')
+						else
+							li(data-target='#carousel-photo', data-slide-to='#{idx}')
 
-                div.carousel-inner
-                    each val in [1,2,3,4,5,6,7,8,9]
-                        if val === 1
-                            div.item.active: img.img-responsive(src='/images/gallery/twins/#{val}.jpg', alt='#{val}')
-                        else            
-                            div.item: img.img-responsive(src='/images/gallery/twins/#{val}.jpg', alt='#{val}')
+				div.carousel-inner
+					each val in [1,2,3,4,5,6,7,8,9]
+						if val === 1
+							div.item.active: img.img-responsive(src='/images/gallery/twins/#{val}.jpg', alt='#{val}')
+						else            
+							div.item: img.img-responsive(src='/images/gallery/twins/#{val}.jpg', alt='#{val}')
 
-                    div.item.essay
-                        p 도대체 어떤 인연이 있어 쌍둥이로 태어났을까? 엄마 뱃속에서부터 인연이 시작된 것일까? 아니면 그그그, 훨씬 그 전부터 시작된 아주 오래된 인연일까?
-                        p 부모 자식보다도, 부부 사이보다도, 더더더, 훨씬 더 많이 미워하기도 하고, 다투기도 하고, 토라지기도 하고.... 그래도그래도 둘은 아무래도 둘이 아닌 것 같다.
-                        p 나는 두 녀석의 사진을 찍으며 부모와 자식 사이를 고민한다. 그러다보면 사진들 사이로 아이와 아이 사이도 보이고, 나와 내 사이도 보이는 듯 하다.
-                        p 하나의 알에서 꺠어났지만, 너무 다른 둘. 서로의 반쪽으로, 서로를 온전히 지탱해 주기를 바라는 것은 부모의 마음 뿐일까? 아이들이 커다듯, 엄마의 시선도 점점 커가리라 생각한다. 물론 커가는 아이들은 점점 더 미궁 속으로 달아나며, 어른들을 따돌리는 형국이다.
-                span.left.carousel-control(data-target='#carousel-photo', data-slide='prev')
-                    span.glyphicon.glyphicon-chevron-left
-                span.right.carousel-control(data-target='#carousel-photo', data-slide='next')
-                    span.glyphicon.glyphicon-chevron-right
-					
+					div.item.essay
+						p 도대체 어떤 인연이 있어 쌍둥이로 태어났을까? 엄마 뱃속에서부터 인연이 시작된 것일까? 아니면 그그그, 훨씬 그 전부터 시작된 아주 오래된 인연일까?
+						p 부모 자식보다도, 부부 사이보다도, 더더더, 훨씬 더 많이 미워하기도 하고, 다투기도 하고, 토라지기도 하고.... 그래도그래도 둘은 아무래도 둘이 아닌 것 같다.
+						p 나는 두 녀석의 사진을 찍으며 부모와 자식 사이를 고민한다. 그러다보면 사진들 사이로 아이와 아이 사이도 보이고, 나와 내 사이도 보이는 듯 하다.
+						p 하나의 알에서 꺠어났지만, 너무 다른 둘. 서로의 반쪽으로, 서로를 온전히 지탱해 주기를 바라는 것은 부모의 마음 뿐일까? 아이들이 커다듯, 엄마의 시선도 점점 커가리라 생각한다. 물론 커가는 아이들은 점점 더 미궁 속으로 달아나며, 어른들을 따돌리는 형국이다.
+				span.left.carousel-control(data-target='#carousel-photo', data-slide='prev')
+					span.glyphicon.glyphicon-chevron-left
+				span.right.carousel-control(data-target='#carousel-photo', data-slide='next')
+					span.glyphicon.glyphicon-chevron-right
+
 		div.fb-like(data-share='true', data-width='450', data-show-faces='true')

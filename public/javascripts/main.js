@@ -34,8 +34,4 @@ $(document).ready(function() {
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
 
-    // works facebook og:description meta tag set
-    if($('.essay').length){
-        $("meta[property='og\\:description']").attr("content", $('.essay').text());
-    }
 });
