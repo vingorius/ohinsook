@@ -5,7 +5,7 @@ block variables
 	- var og_type = og_type || "article";
 	- var og_title = og_title || "My twin daughters";
 	- var og_description = og_description || "My twin daughters, Gallery M, Seoul, KR";
-	- var og_image = og_image || "/images/gallery/twins/1.jpg'";
+	- var og_image = og_image || "http://oh.citygoat.net/images/gallery/twins/1.jpg'";
 
 extends ../modules/baselayout
 
@@ -42,3 +42,5 @@ block content
                     span.glyphicon.glyphicon-chevron-left
                 span.right.carousel-control(data-target='#carousel-photo', data-slide='next')
                     span.glyphicon.glyphicon-chevron-right
+					
+		div.fb-like(data-share='true', data-width='450', data-show-faces='true')

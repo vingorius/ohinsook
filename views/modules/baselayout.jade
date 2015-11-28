@@ -3,9 +3,9 @@ block variables
 - var description = description || "Oh Insook, 오인숙, 서울염소, CityGoat";
 - var og_url = og_url || "http://oh.citygoat.net/";
 - var og_type = og_type || "article";
-- var og_title = og_title || "Photographer Oh,Insook";
-- var og_description = og_description || "Photographer Oh,Insook";
-- var og_image = og_image || "/images/gallery/women/1.jpg'";
+- var og_title = og_title || title;
+- var og_description = og_description || description;
+- var og_image = og_image || "http://oh.citygoat.ne/images/gallery/citygoat/1.jpg'";
 head
 	meta(charset='utf-8')
 	meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -21,7 +21,7 @@ head
 	meta(property='og:title', content='#{og_title}')
 	meta(property='og:description', content='#{og_description}')
 	meta(property='og:image', content='#{og_image}')
-	
+
 	link(rel='icon', href='/favicon.ico')
 	title #{title}
 	// Bootstrap core CSS
