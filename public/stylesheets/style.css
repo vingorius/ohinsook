@@ -144,6 +144,10 @@ body .container {
     height: 60px;
 }
 
+.facebook {
+    bottom: -60px;
+}
+
 /* Grow */
 .hvr-grow {
     display: inline-block;
