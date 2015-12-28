@@ -1,1 +1,79 @@
-{}
+{
+	"work.women": "여자",
+	"work.gallery": "work.gallery",
+	"women.title": "women.title",
+	"women.gallery": "women.gallery",
+	"women": {
+		"title": "women.title",
+		"gallery": "women.gallery"
+	},
+	"getTitle(work)": "getTitle(work)",
+	"imalsan": {
+		"title": "imalsan.title",
+		"gallery": "imalsan.gallery"
+	},
+	"citygoat": {
+		"title": "citygoat.title",
+		"gallery": "citygoat.gallery"
+	},
+	"edge_of_seoul": {
+		"title": "edge_of_seoul.title",
+		"gallery": "edge_of_seoul.gallery"
+	},
+	"twins": {
+		"title": "twins.title",
+		"gallery": "twins.gallery"
+	},
+	"common_people": {
+		"title": "common_people.title",
+		"gallery": "common_people.gallery"
+	},
+	"cv": {
+		"education": {
+			"1": "cv.education.1",
+			"2": "cv.education.2",
+			"3": "cv.education.3",
+			"title": "cv.education.title"
+		},
+		"solo": {
+			"1": "cv.solo.1",
+			"2": "cv.solo.2",
+			"title": "cv.solo.title"
+		},
+		"group": {
+			"1": "cv.group.1",
+			"2": "cv.group.2",
+			"3": "cv.group.3",
+			"4": "cv.group.4",
+			"5": "cv.group.5",
+			"6": "cv.group.6",
+			"7": "cv.group.7",
+			"title": "cv.group.title"
+		}
+	},
+	"title": {
+		"name": "title.name",
+		"work": "title.work",
+		"cv": "title.cv",
+		"press": "title.press",
+		"news": "title.news"
+	},
+	"work": {
+		"women": {
+			"title": "work.women.title",
+			"a": "work.women.a",
+			"gallery": "work.women.gallery"
+		},
+		"imalsan": {
+			"title": "work.imalsan.title",
+			"gallery": "work.imalsan.gallery"
+		},
+		"citygoat": {
+			"title": "work.citygoat.title",
+			"gallery": "work.citygoat.gallery"
+		},
+		"edge_of_seoul": {
+			"title": "work.edge_of_seoul.title"
+		}
+	}
+}

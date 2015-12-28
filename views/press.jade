@@ -10,13 +10,13 @@ block content
 			div.modal-content(style={'background-color':'#333'})
 				div.modal-body(style={'margin':'10px'})
 					div.page-header
-						h2 사진으로 본 당신
-					p 쌍둥이 두 딸의 눈부신 웃음을 좇아 시작된 사진 촬영. 어느 날 아이들 아빠의 긴 그림자의  흔들림을 느낀 순간, 본능적으로 사진기를 들었다. 작은 창을 통해 바라보니 그의 미세한 떨림까지 거짓 없이 보이기 시작했다. 대가족을 부양해야하는 그는 세상살이를 힘겨워했다. 방황과 갈등을 거듭하더니,  귀농을 하거나, 전세금을 빼 세계일주를 하고 싶다 했다.
-					p 쉽지 않았다. 애써 부인하려던 그의 깊은 그림자를 보는 것도, 그를 따라 더 거세게 흔들리는 나 자신을 보는 것도, 사진마저 따라 흔들렸다. 그를 “있는 그대로” 바라보겠다는 굳은 결심을 작업노트에 쓴 뒤에야 비로소 조금씩 사진의 초점이 맞기 시작했다. 아내로서의 마음을 섞지 않고, 피사체에 대한 존중과 고마움을 앞세우니 카메라를 완강히 거부하던 그도 마음을 조금씩 열었다. 몇 년이 흐르고, 함께 사진 찍는 시간이 길어질수록 우리는 서로를 깊이 응시했다. 남편은 서서히 아이들의 배경에서 자기 삶의, 내 사진 속의 주인공이 되어 갔다.
-					p 물론 세상은 우리의 변화를 아랑곳하지 않았다. 구조조정자 명단을 제출하라는 회사의 명령에 팀장이었던  남편은 못하겠다 버텼고  결국 명 회사를 떠났다. 불안했지만 그를 지지했다. 자기 마음을 알아준다는 데 그는 안도했고, 나는 군말 없이 그가 하자는 대로 해 보기로 했다. 시골집에서 살기도 하고, 온 가족이 무작정 중국행 배를 타고 몇 달 여행도 다녀왔다. 한참 지나서야 그는 다시 직장을 구했다.
-					p 나는 남편에게 감사와 위로를 전하기 위해 선물을 준비했다. 남편이 방황하는 동안 찍은 사진으로 사진전을 열고, <서울염소>라는 책을 출간했다. 아빠랑 자주 부딪히던 두 딸이 첫 독자였다. 책을 읽다가. 대성통곡하며 아빠를, 가족을 이해하게 됐다고 했다. 고마웠다. 그런데 남편은 너무 덤덤했다. 처음엔 섭섭한 마음도 들었지만, 곧 깨달았다. 사진을 찍느라 함께했던 순간순간, 그리고 그 사진들을 보고 또 보며 사진전을 준비하고 책을 쓰며 무수히 나누었던 이야기……. 우리는 이미 그 과정에서 충만함을 느꼈고, 넘치게 행복했다는 것을. 그래서 더 이상 새삼스레 보탤 것이 없다는 것을.
+						h2= __('press.goodthink.title')
+					p= __('press.goodthink.article1')
+					p= __('press.goodthink.article2')
+					p= __('press.goodthink.article3')
+					p= __('press.goodthink.article4')
 					div(style={'text-align':'right'})
-						em - 월간 좋은 생각 9월호 p28
+						em= __('press.goodthink.press')
 
 	div#main.container.main-margin
 		table.table
@@ -24,65 +24,65 @@ block content
 				tr
 					td(style='vertical-align:middle;')
 						a(href='#', data-toggle="modal", data-target="#goodThinkModal")
-							img.hvr-grow.work_image(alt='월간 좋은 생각 9월호', src='images/press/goodthink.jpg')
+							img.hvr-grow.work_image(alt="#{__('press.goodthink.press')}", src='images/press/goodthink.jpg')
 					td
 						h4
-							a(href='#', data-toggle="modal", data-target="#goodThinkModal") 사진으로 본 당신
+							a(href='#', data-toggle="modal", data-target="#goodThinkModal")= __('press.goodthink.title')
 							br
 							br
-							small(style='line-height: 1.42857;') ...... 나는 남편에게 감사와 위로를 전하기 위해 선물을 준비했다. 남편이 방황하는 동안 찍은 사진으로 사진전을 열고, <서울염소>라는 책을 출간했다. 아빠랑 자주 부딪히던 두 딸이 첫 독자였다. 책을 읽다가. 대성통곡하며 아빠를, 가족을 이해하게 됐다고 했다. 고마웠다. 그런데 남편은 너무 덤덤했다. 처음엔 섭섭한 마음도 들었지만, 곧 깨달았다. 사진을 찍느라 함께했던 순간순간, 그리고 그 사진들을 보고 또 보며 사진전을 준비하고 책을 쓰며 무수히 나누었던 이야기……. 우리는 이미 그 과정에서 충만함을 느꼈고, 넘치게 행복했다는 것을. 그래서 더 이상 새삼스레 보탤 것이 없다는 것을.
+							small(style='line-height: 1.42857;')= __('press.goodthink.article') 
 								br
 								br
-								em 2015.09.01, 월간 좋은 생각 9월호 p28
+								em= __('press.goodthink.press')
 				tr
 					td(style='vertical-align:middle;')
 						a(href='http://www.yes24.com/24/goods/17698793', target='_blank')
-							img.hvr-grow.work_image(alt='서울염소', src='images/press/citygoatbook.jpg')
+							img.hvr-grow.work_image(alt="#{__('press.citygoat.press')}", src='images/press/citygoatbook.jpg')
 					td
 						h4
-							a(href='http://www.yes24.com/24/goods/17698793', target='_blank') 서울염소
+							a(href='http://www.yes24.com/24/goods/17698793', target='_blank')= __('press.citygoat.title')
 							br
 							br
-							small(style='line-height: 1.42857;') 사진으로 쓴 남편 이야기
+							small(style='line-height: 1.42857;')= __('press.citygoat.article')
 								br
 								br
-								em 2015.05.01, 효형출판 
+								em= __('press.citygoat.press')
 				tr
 					td(style='vertical-align:middle;')
 						a(href='http://www.hani.co.kr/arti/ISSUE/124/636325.html', target='_blank')
-							img.hvr-grow.work_image(alt='저 불', src='images/press/fire.jpeg')
+							img.hvr-grow.work_image(alt="#{__('press.fire.press')}", src='images/press/fire.jpeg')
 					td
 						h4
-							a(href='http://www.hani.co.kr/arti/ISSUE/124/636325.html', target='_blank') 저 불
+							a(href='http://www.hani.co.kr/arti/ISSUE/124/636325.html', target='_blank')= __('press.fire.title')
 							br
 							br
-							small(style='line-height: 1.42857;') 2014년 4월23일 밤, 같은 시간 같은 나이의 아이들은 세월호에서 수장당하고 있다. 밤늦게까지 불이 꺼지지 않는 경기도 안양의 한 학교 교문에는 ‘오늘보다 내일이 좋은 학교’라고 써 있다. 오늘보다 좋은 내일은 무엇으로 보장되는가? 1993년 서해훼리호 침몰 사고, 1995년 삼풍백화점 붕괴 사고, 1999년 화성 씨랜드 사고, 이루 말로 다 할 수 없는 인재형 사고가 끊이지 않는 나라. 세월이 지나면 세월호 참사도 잊혀져갈 테지만 왜 어쩌자고 이 나라의 책임자들은 반성의 여지는 물론 참회의 여지도 보이지 않는가? 그리고 저 불은 도대체 언제 꺼질까? 미래에 대한 두려움으로 얼마나 더 젊은 청춘들을 가두어야 하는가?
+							small(style='line-height: 1.42857;')= __('press.fire.article') 
 								br
 								br
-								em 2014.05.09, 한겨레신문
+								em= __('press.fire.press')
 				tr
 					td(style='vertical-align:middle;')
 						a(href='http://www.hani.co.kr/arti/society/society_general/657086.html', target='_blank')
-							img.hvr-grow.work_image(alt='자기야 힘내 !', src='images/press/darling.jpeg')
+							img.hvr-grow.work_image(alt="#{__('press.darling.press')}", src='images/press/darling.jpeg')
 					td
 						h4
-							a(href='http://www.hani.co.kr/arti/society/society_general/657086.html', target='_blank') 자기야 힘내 !
+							a(href='http://www.hani.co.kr/arti/society/society_general/657086.html', target='_blank')= __('press.darling.title')
 							br
 							br
-							small(style='line-height: 1.42857;') 거대한 사회구조의 매트릭스 속에서 살아남기 위해 최전선에서 질주하는 우리의 가장들! 한 발자국 거리를 두고 바라보니 그들은 너무나 아파 병이 들어 있었고, 그들이 느끼는 인간적인 소외감은 생각보다 훨씬 더 깊고 컸다. 지난 수년간 사진을 통해 남편의 내면 속 외침을 들으려 애쓰다 보니 그의 인간적인 아픔과 고뇌는 개인적인 문제가 아니라 현대를 살아가는 우리 한국 사회 대다수의 가장들이 외치는 소리였다. 가장이라는 이름으로 불리기 이전에 초라하고 외로운 한 인간, 그들을 있는 그대로의 순수한 인간으로 바라봐주는 것이 그들의 아픔을 치유할 수 있는 시작임을 전하고 싶다.
+							small(style='line-height: 1.42857;')= __('press.darling.article') 
 								br
 								br
-								em 2014.09.26, 한겨레신문
+								em= __('press.darling.press') 
 				tr
 					td(style='vertical-align:middle;')
 						a(href='http://www.hani.co.kr/arti/society/society_general/671953.html', target='_blank')
-							img.hvr-grow.work_image(alt='하하호호 뜨개질', src='images/press/sew.jpeg')
+							img.hvr-grow.work_image(alt="#{__('press.sew.press')}", src='images/press/sew.jpeg')
 					td
 						h4
-							a(href='http://www.hani.co.kr/arti/society/society_general/671953.html', target='_blank') 하하호호 뜨개질
+							a(href='http://www.hani.co.kr/arti/society/society_general/671953.html', target='_blank')= __('press.sew.title') 
 							br
 							br
-							small(style='line-height: 1.42857;') 지난해 여름, 이웃 언니들과 동생들이 식구들 입던 낡은 청바지를 들고 모였다. 조각조각 잘라 이리저리 섞어서 새롭게 구성해보았다. 그리고 한땀 한땀 손바느질로 하하호호 웃음과 수다를 곁들여 완전히 새로운 가방들로 탄생시켰다. 진도 앞바다에서 자식을 잃은 어머니들과 쌍용차 해고 노동자의 아내들에게도 뜨개질만한 진통제가 없다고 들었다. 을미년 새해에도 우리 여인네들의 아픔과 슬픔, 기쁨과 행복을 조각조각 자르고 섞어서 이웃 간에 서로 사랑하고 행복해지기를 소망해 본다.
+							small(style='line-height: 1.42857;')= __('press.sew.article')
 								br
 								br
-								em 2015.01.02, 한겨레신문
+								em= __('press.sew.press')
