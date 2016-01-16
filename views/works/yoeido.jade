@@ -2,8 +2,7 @@ block variables
 	- og_url = "http://oh.citygoat.net/works/yoeido";
 	- og_type = "article";
 	- og_title = "Looking at Yoeido";
-	- og_description = "빽빽한 빌딩 숲 사이사이로 가로수에는 매미들이 잔뜩 매달려 우렁찬 아침을 알렸고 사람들은 넥타이를 휘날리며 바쁜 걸음을 재촉한다.숨 가삐 텅 비어버린 거리에는 시계탑의 초침만이 돌고 돌고 또 돌고다시 십자 교차로에 밀물처럼 사람들이 몰려와 점심으로 향했다.거리에는 커피향이 가득했고,사람들 사이로 수다와 웃음이 흘렀다.하얀 와이셔츠는 햇빛에 반사되어 더욱 하얀 빛이 나는 듯 했다.불현듯, 쏟아지는 한 여름 소낙비에 모두가 저마다의 우산을 받쳐 들고 일순간, 순간도 못 견딜 것 같은 아주 작은 섬이 되어 사라져간다.숨 가삐 텅 비어버린 거리에는시계탑의 초침만이 돌고 돌고 또 돌고흐릿한 해마저 서서히 기울어가자 다시 십자 교차로에 검은 껍데기를 걸쳐 입은 사람들이 몰려나와 저 마다의 어딘가를 향해 썰물처럼 빠져 나갔다.그렇게 하루는 흘러갔다.";
-	- og_image = "http://oh.citygoat.net/images/gallery/yoeido/1.jpg";
+	- og_description = __('work.yoeido.note');
 	- title = og_title;
 	- description = og_description;
 
@@ -13,8 +12,7 @@ block content
 	div#main.container
 		div.work-detail
 			div.work-detail-header
-				h3.text-center
-					| Looking at Yoeido, the Island in Seoul
+				h3.text-center= __('work.yoeido.title')
 					a.pull-right(href='/work')
 						span(aria-hidden='true') ×
 			div#carousel-photo.carousel.slide(data-ride='carousel', data-interval='false')
@@ -32,15 +30,8 @@ block content
 							div.item.active: img.img-responsive(src='/images/gallery/yoeido/#{val}.jpg', alt='#{val}')
 						else            
 							div.item: img.img-responsive(src='/images/gallery/yoeido/#{val}.jpg', alt='#{val}')
-
 					div.item.essay
-						p 빽빽한 빌딩 숲 사이사이로 가로수에는 매미들이 잔뜩 매달려 우렁찬 아침을 알렸고 사람들은 넥타이를 휘날리며 바쁜 걸음을 재촉한다.
-						p 숨 가삐 텅 비어버린 거리에는 시계탑의 초침만이 돌고 돌고 또 돌고
-						p 다시 십자 교차로에 밀물처럼 사람들이 몰려와 점심으로 향했다.거리에는 커피향이 가득했고,사람들 사이로 수다와 웃음이 흘렀다.하얀 와이셔츠는 햇빛에 반사되어 더욱 하얀 빛이 나는 듯 했다.
-						p 불현듯, 쏟아지는 한 여름 소낙비에 모두가 저마다의 우산을 받쳐 들고 일순간, 순간도 못 견딜 것 같은 아주 작은 섬이 되어 사라져간다.
-						p 숨 가삐 텅 비어버린 거리에는시계탑의 초침만이 돌고 돌고 또 돌고
-						p 흐릿한 해마저 서서히 기울어가자 다시 십자 교차로에 검은 껍데기를 걸쳐 입은 사람들이 몰려나와 저 마다의 어딘가를 향해 썰물처럼 빠져 나갔다.
-						p 그렇게 하루는 흘러갔다.
+						div.col-lg-8.col-lg-offset-2!= __('work.yoeido.note')
 				span.left.carousel-control(data-target='#carousel-photo', data-slide='prev')
 					span.glyphicon.glyphicon-chevron-left
 				span.right.carousel-control(data-target='#carousel-photo', data-slide='next')
